@@ -1,0 +1,44 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Media query pentru dispozitive mobile */
+@media only screen and (max-width: 767px) {
+    .hero {
+        width: calc(var(--index) * 46);
+        left: 12vw;
+        top: 15vh;
+    }
+    .main-title {
+        font-size: calc(var(--index) * 6);
+        bottom: 18vh;
+        line-height: 1.1;
+    }
+    .container {
+        padding: 0 4vw;
+    }
+    .gallery {
+        padding: calc(var(--index) * 9) 0;
+    }
+    .gallery__item {
+        max-width: calc(var(--index) * 13);
+    }
+}
+
+/* Media query pentru tablete */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .hero {
+        width: calc(var(--index) * 46);
+        left: 12vw;
+        top: 10vh;
+    }
+    .gallery__item {
+        max-width: calc(var(--index) * 16);
+    }}
+
+/* Media query pentru desktop-uri și laptop-uri */
+@media only screen and (min-width: 1024px) {
+    /* Stiluri specifice pentru ecrane mai mari (desktop-uri și laptop-uri) */
+}
